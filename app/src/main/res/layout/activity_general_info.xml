@@ -6,20 +6,21 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/abril_fatface"
-            android:paddingRight="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
             android:paddingTop="16dp"
-            android:text="JR's Pizza"
+            android:text="@string/business_name"
             android:textAlignment="viewEnd"
             android:textColor="#9e0f17"
             android:textSize="42sp" />
@@ -28,13 +29,14 @@
             android:id="@+id/subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@id/title"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/satisfy_regular"
             android:paddingBottom="16dp"
-            android:paddingRight="16dp"
-            android:text="Crowley's Favorite Pizza Place"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/subtitle"
             android:textAlignment="viewEnd"
             android:textColor="#439415"
             android:textSize="24sp" />
@@ -43,27 +45,29 @@
             android:id="@+id/mainTextInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@id/subtitle"
-            android:layout_marginLeft="64dp"
+            android:layout_marginStart="64dp"
             android:fontFamily="sans-serif"
-            android:gravity="fill_horizontal|right"
+            android:gravity="fill_horizontal|end"
             android:paddingBottom="16dp"
-            android:paddingRight="16dp"
-            android:text="For the best pizza in Crowley, Texas try JR's Pizza.  If you like pepperoni pizza, or pizza with the works, a supreme pizza, or a cheese pizza, JR's Pizza Crowley is here for you. If you like real beef hamburgers you've come to the right place. Or maybe you're in the mood for a fresh salad, pasta, or one of our delicious burritos. We have those on the menu too."
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/description_text"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/orderCall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@id/mainTextInfo"
             android:layout_centerHorizontal="true"
             android:autoLink="phone"
             android:fontFamily="sans-serif"
-            android:paddingRight="16dp"
-            android:text="To Order Call: 817-297-3000"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/phone_number"
             android:textAlignment="viewEnd"
             android:textColorLink="#9e0f17"
             android:textSize="24sp" />
@@ -72,14 +76,15 @@
             android:id="@+id/available"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@id/orderCall"
             android:layout_centerHorizontal="true"
             android:autoLink="phone"
             android:fontFamily="sans-serif"
             android:paddingBottom="8dp"
-            android:paddingRight="16dp"
-            android:text="Delivery, Dine-In, or Take-Out:"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/subtitle_phone_number"
             android:textAlignment="viewEnd"
             android:textSize="18sp" />
 
@@ -87,22 +92,23 @@
             android:id="@+id/hours"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@id/available"
             android:layout_centerHorizontal="true"
             android:autoLink="phone"
             android:fontFamily="sans-serif-condensed"
             android:paddingBottom="16dp"
-            android:paddingRight="16dp"
-            android:text="Monday - Saturday: 7am to 9pm\nSunday: 7am to 5pm"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/business_schedule"
             android:textAlignment="viewEnd"
             android:textSize="18sp" />
 
         <LinearLayout
             android:id="@+id/LinLay"
             android:layout_width="match_parent"
-            android:layout_height="300px"
-            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
             android:layout_below="@id/hours"
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
@@ -110,18 +116,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
                 android:layout_weight="1"
                 android:autoLink="map"
-                android:text="448 E. Main St. Crowley, TX 76036"
+                android:text="@string/address"
                 android:textAlignment="center"
                 android:textColorLink="#9e0f17"
                 android:textSize="16sp" />
 
             <ImageView
+                android:contentDescription="@string/content_description_map"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:src="@drawable/staticmap" />
@@ -132,7 +139,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/LinLay"
-            android:text="To look at our Menu, tap below:"
+            android:text="@string/web_link"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -142,7 +149,7 @@
             android:layout_below="@id/linkme"
             android:autoLink="web"
             android:paddingBottom="16dp"
-            android:text="https://www.jrspizzacrowley.com"
+            android:text="@string/website"
             android:textAlignment="center"
             android:textColorLink="#9e0f17"
             android:textSize="24sp" />

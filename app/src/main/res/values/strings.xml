@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">JR\'s Pizza</string>
+    <string name="business_name">JR\'s Pizza</string>
+    <string name="subtitle">Crowley\'s Favorite Pizza Place</string>
+    <string name="description_text">For the best pizza in Crowley, Texas try JR\'s Pizza. If you like pepperoni pizza, or pizza with the works, a supreme pizza, or a cheese pizza, JR\'s Pizza Crowley is here for you. If you like real beef hamburgers you\'ve come to the right place. Or maybe you\'re in the mood for a fresh salad, pasta, or one of our delicious burritos. We have those on the menu too.</string>
+    <string name="phone_number">To Order Call: 817\-297\-3000</string>
+    <string name="subtitle_phone_number">Delivery, Dine-In, or Take-Out:</string>
+    <string name="business_schedule">Monday - Saturday: 7am to 9pm\nSunday: 7am to 5pm</string>
+    <string name="address">448 E. Main St. Crowley, TX 76036</string>
+    <string name="content_description_map">Map of JR\'s Pizza</string>
+    <string name="web_link">To look at our Menu, tap below:</string>
+    <string name="website">https://www.jrspizzacrowley.com</string>
 </resources>
