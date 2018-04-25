@@ -22,7 +22,7 @@
             android:paddingTop="16dp"
             android:text="@string/business_name"
             android:textAlignment="viewEnd"
-            android:textColor="#9e0f17"
+            android:textColor="@color/colorPrimary"
             android:textSize="42sp" />
 
         <TextView
@@ -38,7 +38,7 @@
             android:paddingEnd="16dp"
             android:text="@string/subtitle"
             android:textAlignment="viewEnd"
-            android:textColor="#439415"
+            android:textColor="@color/colorAccent"
             android:textSize="24sp" />
 
         <TextView
@@ -69,7 +69,7 @@
             android:paddingStart="16dp"
             android:text="@string/phone_number"
             android:textAlignment="viewEnd"
-            android:textColorLink="#9e0f17"
+            android:textColorLink="@color/colorPrimary"
             android:textSize="24sp" />
 
         <TextView
@@ -121,7 +121,7 @@
                 android:autoLink="map"
                 android:text="@string/address"
                 android:textAlignment="center"
-                android:textColorLink="#9e0f17"
+                android:textColorLink="@color/colorPrimary"
                 android:textSize="16sp" />
 
             <ImageView
@@ -151,7 +151,7 @@
             android:paddingBottom="16dp"
             android:text="@string/website"
             android:textAlignment="center"
-            android:textColorLink="#9e0f17"
+            android:textColorLink="@color/colorPrimary"
             android:textSize="24sp" />
     </RelativeLayout>
 
